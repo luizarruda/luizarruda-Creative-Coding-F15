@@ -2,7 +2,7 @@
 
 function setup (){
   createCanvas (430,500);
-  background(250);
+  
    // Create an Audio input
   input = new p5.AudioIn();
 
@@ -14,6 +14,7 @@ var z=-100;
 var w=-100;
  
 function draw(){
+  //background(mouseX,mouseY,0);
 // Get the overall volume (between 0 and 1.0)
   var volume = input.getLevel(0);
 println(volume);
@@ -22,12 +23,12 @@ println(volume);
   var threshold = 0.1;
   if (volume > threshold) {
   while (x<100){
-  stroke(0);
+  stroke(40);
   rect(x,0,2,500);
   x= x+3;
   }}
   while (y<500){
-    rect(110,y,100,2);
+    rect(110,y,100,2+mouseX);
     y = y+3;
   }
   if (volume > threshold) {

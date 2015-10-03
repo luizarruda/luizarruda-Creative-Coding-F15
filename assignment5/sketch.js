@@ -1,6 +1,6 @@
 /**
-** Simple second clock.
-** An exercise in translating from polar to cartesian coordinates
+** Assignment 5
+** Kevin Siwoff's clock edited
 **/
 var r = 150.0;
 var angle = 0.0;
@@ -23,9 +23,12 @@ function draw(){
   
   //draw a line from the center of our screen and as long as our radius
   line(0,0,x,y);
+  
+  //draw triangles in each quadrant of the clock
   if(angle<((15 / 59.0)* TWO_PI)){
     fill(5);
   triangle(0,0,x,y,r,0);}
+  
   
   if(angle>((15 / 59.0)* TWO_PI) && angle<((30 / 59.0)* TWO_PI)){
     fill(100);
