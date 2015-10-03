@@ -36,7 +36,7 @@ void draw(){
   
   
   beginShape();//draw pink1 trapezio
-  fill(#D32F6E);
+  fill(#D72A2A);
   noStroke();
   vertex(4,247);
   vertex(79,247);
@@ -46,7 +46,7 @@ void draw(){
   
   
   beginShape();//draw pink2 trapezio
-  fill(#D32F6E);
+  fill(#D72A2A);
   noStroke();
   vertex(296,247);
   vertex(221,247);
