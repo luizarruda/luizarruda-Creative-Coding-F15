@@ -56,7 +56,7 @@ function draw(){
   
   
   //background(y);
-  for (var i = 0; i < 200; i += 20) {
+  for (var i = 0; i < 50; i += 20) {
     bezier(x-(i/2.0), 40+i, x, 20, y, 300, 240-(i/16.0), 300+(i/8.0));
   
 
